@@ -10,30 +10,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include_directories(src)
 
 # Compiler flags
-set(CXX_COMPILE_FLAGS
-    -g
-    -O3
-    -march=native
-    -ffast-math
-    -Wall
-    -Wextra
-    -Wshadow
-    -Wnon-virtual-dtor
-    -Wold-style-cast
-    -Wcast-align
-    -Wunused
-    -Woverloaded-virtual
-    -Wpedantic
-    -Wconversion
-    -Wsign-conversion
-    -Wnull-dereference
-    -Wdouble-promotion
-    -Wformat=2
-    -Werror
-    -fomit-frame-pointer
-    -ftree-vectorize
-    -fno-stack-check
-    -funroll-loops
+set(COMPILE_FLAGS
+    /W4
+    /permissive-
+    /MP
 )
 
 # Collect source files
@@ -54,7 +34,7 @@ set(SOURCES
 # -------------------------------
 add_executable(ruptura src/main.cpp ${SOURCES})
 
-target_compile_options(ruptura PRIVATE ${CXX_COMPILE_FLAGS})
+target_compile_options(ruptura PRIVATE ${COMPILE_FLAGS})
 
 # -------------------------------
 # Doxygen Documentation

@@ -694,8 +694,8 @@ void Breakthrough::createPlotScript()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_graphs"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_graphs", S_IRWXU);
+// #else
+//   chmod("make_graphs", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_breakthrough");
@@ -789,8 +789,8 @@ void Breakthrough::createMovieScripts()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movies"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movies", S_IRWXU);
+// #else
+//   chmod("make_movies", S_IRWXU);
 #endif
 
   createMovieScriptColumnV();
@@ -867,8 +867,8 @@ void Breakthrough::createMovieScriptColumnV()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movie_V"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movie_V", S_IRWXU);
+// #else
+//   chmod("make_movie_V", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_column_V");
@@ -930,8 +930,8 @@ void Breakthrough::createMovieScriptColumnPt()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movie_Pt"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movie_Pt", S_IRWXU);
+// #else
+//   chmod("make_movie_Pt", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_column_Pt");
@@ -993,8 +993,8 @@ void Breakthrough::createMovieScriptColumnQ()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movie_Q"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movie_Q", S_IRWXU);
+// #else
+//   chmod("make_movie_Q", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_column_Q");
@@ -1071,8 +1071,8 @@ void Breakthrough::createMovieScriptColumnQeq()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movie_Qeq"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movie_Qeq", S_IRWXU);
+// #else
+//   chmod("make_movie_Qeq", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_column_Qeq");
@@ -1149,8 +1149,8 @@ void Breakthrough::createMovieScriptColumnP()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movie_P"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movie_P", S_IRWXU);
+// #else
+//   chmod("make_movie_P", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_column_P");
@@ -1227,8 +1227,8 @@ void Breakthrough::createMovieScriptColumnPnormalized()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movie_Pnorm"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movie_Pnorm", S_IRWXU);
+// #else
+//   chmod("make_movie_Pnorm", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_column_Pnorm");
@@ -1305,8 +1305,8 @@ void Breakthrough::createMovieScriptColumnDpdt()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movie_Dpdt"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movie_Dpdt", S_IRWXU);
+// #else
+//   chmod("make_movie_Dpdt", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_column_Dpdt");
@@ -1387,8 +1387,8 @@ void Breakthrough::createMovieScriptColumnDqdt()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_movie_Dqdt"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_movie_Dqdt", S_IRWXU);
+// #else
+//   chmod("make_movie_Dqdt", S_IRWXU);
 #endif
 
   std::ofstream stream("plot_column_Dqdt");

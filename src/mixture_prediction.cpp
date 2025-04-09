@@ -1390,8 +1390,7 @@ void MixturePrediction::createPlotScript()
 #if (__cplusplus >= 201703L)
   std::filesystem::path path{"make_graphs"};
   std::filesystem::permissions(path, std::filesystem::perms::owner_exec, std::filesystem::perm_options::add);
-#else
-  chmod("make_graphs", S_IRWXU);
+// #elseg("make_graphs", S_IRWXU);
 #endif
 }
 
