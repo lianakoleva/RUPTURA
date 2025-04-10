@@ -14,7 +14,9 @@ set(COMPILE_FLAGS
     /W4
     /permissive-
     /MP
+    /MT
 )
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 # Collect source files
 set(SOURCES
@@ -39,4 +41,4 @@ target_compile_options(ruptura PRIVATE ${COMPILE_FLAGS})
 # -------------------------------
 # Doxygen Documentation
 # -------------------------------
-add_subdirectory(docs)
+# add_subdirectory(docs)
